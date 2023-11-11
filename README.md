@@ -145,3 +145,5 @@ https://www.youtube.com/watch?v=POLPbl0I2do&list=PLdDT8if5attGc3fgFsFe5cvV9MwlVF
 ### Instalando o Rspec no Rails
 
 Vou criar outro repositório para tal tarefa.
+
+https://github.com/vanderleipinto/rubyonrails_rspec_test.git
