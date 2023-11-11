@@ -58,3 +58,12 @@ Finished in 0.00265 seconds (files took 0.06151 seconds to load)
 1 example, 0 failures
 
 ---
+
+Desafio do Heroi #1
+Fazer um teste de comparação do hp. Depois de criado o atributo hp, criei o teste.
+it 'has a more than 1000 HP points' do
+hero = Hero.new
+expect(hero.hp).to be > 1000
+end
+
+---
