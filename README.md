@@ -59,11 +59,89 @@ Finished in 0.00265 seconds (files took 0.06151 seconds to load)
 
 ---
 
-Desafio do Heroi #1
+https://www.youtube.com/watch?v=hC2XVkIs9wU&list=PLdDT8if5attGc3fgFsFe5cvV9MwlVFNLW&index=9&ab_channel=OneBitCode
+
+### Desafio do Heroi #1
+
 Fazer um teste de comparação do hp. Depois de criado o atributo hp, criei o teste.
+
 it 'has a more than 1000 HP points' do
 hero = Hero.new
 expect(hero.hp).to be > 1000
 end
 
+Referências: https://www.rubydoc.info/gems/rspec-expectations/frames
+
 ---
+
+https://www.youtube.com/watch?v=rzXSenE4mnI&list=PLdDT8if5attGc3fgFsFe5cvV9MwlVFNLW&index=6&ab_channel=OneBitCode
+
+### Principais elementos do Rspec
+
+- describe
+- context
+- it
+- expect
+
+- Describe define um grupo de exemplos
+- Pode receber um nome de classe ou uma string como parâmetros
+
+  - Hero
+  - '#destroy'
+
+- Context agrupa testes associados ao mesmo contexto
+
+  - Não é obrigatório mas ajuda a tornar os testes mais legíveis e simples
+
+    describe Hero do
+    context 'quando está com a armadura' do
+    ...
+    ...
+    end
+    end
+
+- it é usado para definir um exemplo (teste)
+
+  describe Hero do
+  context 'quando está com a armadura' do
+  it 'tem 5000 pontos de hp' do
+  expect(hero.hp).to eq(5000)
+  end
+  end
+  end
+
+- expect é onde verificamos se uma determinada condição está ocorrendo para concluirmos que nosso teste passou.
+
+  describe Hero do
+  context 'quando está com a armadura' do
+  it 'tem 5000 pontos de hp' do
+  expect(hero.hp).to eq(5000)
+  end
+  end
+  end
+
+---
+
+https://www.youtube.com/watch?v=R0v55Fk5v4g&list=PLdDT8if5attGc3fgFsFe5cvV9MwlVFNLW&index=7&ab_channel=OneBitCode
+
+### O que são os matchers
+
+Um matcher é uma instrução para verificar se uma determinada condição está sendo atendida
+
+expect(message).to eq "Hello Hero!"
+
+- Equivalencia e identidade.
+- Comparação
+- Classe e tipo
+- True/false/nil
+- Erro
+
+referência: https://www.rubydoc.info/gems/rspec-expectations/RSpec/Matchers
+
+---
+
+https://www.youtube.com/watch?v=POLPbl0I2do&list=PLdDT8if5attGc3fgFsFe5cvV9MwlVFNLW&index=8&ab_channel=OneBitCode
+
+### Instalando o Rspec no Rails
+
+Vou criar outro repositório para tal tarefa.
